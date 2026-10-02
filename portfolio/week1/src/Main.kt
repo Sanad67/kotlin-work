@@ -10,10 +10,15 @@ fun main(args: Array<String>){
         println("Error: values for a, b, c required on command line")
         exitProcess(1)
     }
-    val number1 = args[0].toFloat()
-    val number2 = args[1].toFloat()
-    val number3 = args[2].toFloat()
+    val a = args[0].toFloat()
+    val b = args[1].toFloat()
+    val c = args[2].toFloat()
 
-    val area = number1 * number2 * number3
+    val add = a+b+c
+    val s = add / 2f
+    val subtract = (s - a) *(s - b)* (s - c)* s
+    val area = sqrt(subtract)
+    
     System.out.printf("Area = %.5f\n", area)
+
 }
