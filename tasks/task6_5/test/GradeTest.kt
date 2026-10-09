@@ -9,4 +9,6 @@ import io.kotest.matchers.shouldBe
 @Suppress("unused")
 class GradeTest : FreeSpec({
     // Write your tests in here
+
+}
 })
