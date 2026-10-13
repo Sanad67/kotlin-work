@@ -7,7 +7,7 @@ import kotlin.test.assertEquals
 class RedactTest {
     @Test
     fun `Redaction of empty string is an empty string`() {
-        val result = redact("", "Hello")
+        val result = redact("" , "Hello")
         assertEquals("", result)
     }
 

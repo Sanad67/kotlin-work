@@ -9,7 +9,7 @@ typealias Database = MutableMap<String,String>
 fun createDatabase() = mutableMapOf<String,String>()
 
 fun Database.load(filename: String) {
-    // Add code here to read names and numbers from the file
+// Add code here to read names and numbers from the file
     // and insert them as keys and values into the map
 }
 
