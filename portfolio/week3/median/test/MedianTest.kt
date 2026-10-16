@@ -17,4 +17,18 @@ class MedianTest : FreeSpec({
     }
 
     // Write four more tests here
+    // first we check for base case when only one number any number really
+    "Median when size=1" {
+        median(listOf(8.0f)) shouldBe (8.0f plusOrMinus tolerance)
+    }
+    "Median when size=2" { // handles median for even numbers at a small scale so erorr catching is easier
+        median(listOf(1.0f, 3.0f)) shouldBe (2.0f plusOrMinus tolerance)
+    }
+    "Median when size=3" { // likewise for the odd same reasoning as in the even
+        median(listOf(1.0f, 3.0f, 2.0f)) shouldBe (2.0f plusOrMinus tolerance)
+    }
+    "Median when size=4" {
+        median(listOf(4.0f, 1.0f, 3.0f, 2.0f)) shouldBe (2.5f plusOrMinus tolerance)
+    }
+
 })
