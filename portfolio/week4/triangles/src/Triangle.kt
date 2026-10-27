@@ -24,7 +24,7 @@ class Triangle(
     val area: Double
         get() = sqrt((semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC) * semiPerimeter)
 
-    fun describeTriangle(): String {
+    override fun toString(): String {
         return "Triangle($sideA, $sideB, $sideC)"
     }
 }

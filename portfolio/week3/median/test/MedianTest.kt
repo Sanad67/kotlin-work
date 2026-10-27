@@ -27,7 +27,7 @@ class MedianTest : FreeSpec({
     "Median when size=3" { // likewise for the odd same reasoning as in the even
         median(listOf(1.0f, 3.0f, 2.0f)) shouldBe (2.0f plusOrMinus tolerance)
     }
-    "Median when size=4" {
+    "Median when size=4" { //tesing cases above the
         median(listOf(4.0f, 1.0f, 3.0f, 2.0f)) shouldBe (2.5f plusOrMinus tolerance)
     }
 
